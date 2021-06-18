@@ -1,0 +1,5 @@
+export const UPDATE_INPUT = "UPDATE_INPUT";
+export const UPDATE_VALIDITY = "UPDATE_VALIDITY";
+export const LOSE_FOCUS = "LOSE_FOCUS";
+export const IS_FOCUSED = "IS_FOCUSED ";
+export const TOGGLE_CHECKBOX = "TOGGLE_CHECKBOX";
