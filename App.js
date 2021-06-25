@@ -14,12 +14,14 @@ import AuthReducer from "./store/reducers/auth";
 import BottlesReducer from "./store/reducers/bottles";
 import PortfolioReducer from "./store/reducers/portfolio";
 import ReviewReducer from "./store/reducers/review";
+import StatsReducer from "./store/reducers/stats";
 
 const rootReducer = combineReducers({
   auth: AuthReducer,
   bottles: BottlesReducer,
   portfolio: PortfolioReducer,
   review: ReviewReducer,
+  stats: StatsReducer,
 });
 
 const store = createStore(rootReducer, applyMiddleware(ReduxThunk));

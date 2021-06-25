@@ -58,7 +58,7 @@ const BottlesOverviewScreen = ({ navigation, route }) => {
 
   if (isError)
     return (
-      <View>
+      <View style={styles.centered}>
         <BodyTextRegular>{isError}</BodyTextRegular>
       </View>
     );

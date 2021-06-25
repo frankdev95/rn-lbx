@@ -21,4 +21,5 @@ export default {
   calendar: require("../assets/images/icons/calendar.png"),
   profile: require("../assets/images/icons/user.png"),
   collection: require("../assets/images/icons/bottle-rack.png"),
+  statistics: require("../assets/images/icons/stats.png"),
 };

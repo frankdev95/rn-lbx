@@ -10,11 +10,11 @@ import {
 import { SimpleLineIcons } from "@expo/vector-icons";
 import { Drawer } from "./Navigators";
 import { logoutUser } from "../store/actions/auth";
-import Icons from "../constants/Icons";
+import icons from "../constants/Icons";
 import BottleNavigator from "./stacks/BottleNavigator";
 import ProfileNavigator from "./stacks/ProfileNavigator";
 import CollectionNavigator from "./stacks/CollectionNavigator";
-import Colors from "../constants/Colors";
+import WhiskyStatsNavigator from "./stacks/WhiskyStatsNavigator";
 
 const CustomDrawerContent = (props) => {
   const dispatch = useDispatch();
@@ -58,7 +58,7 @@ export default () => {
                   left: 3,
                   tintColor: focused ? color : "black",
                 }}
-                source={Icons.profile}
+                source={icons.profile}
               />
             ),
           }}
@@ -76,7 +76,7 @@ export default () => {
                   left: 7,
                   tintColor: focused ? color : "black",
                 }}
-                source={Icons.whisky}
+                source={icons.whisky}
               />
             ),
           }}
@@ -95,7 +95,27 @@ export default () => {
                   left: 5,
                   tintColor: focused ? color : "black",
                 }}
-                source={Icons.collection}
+                source={icons.collection}
+              />
+            ),
+          }}
+        />
+        <Drawer.Screen
+          name="WhiskyStats"
+          component={WhiskyStatsNavigator}
+          options={{
+            title: "Whisky Stats",
+            drawerIcon: ({ focused, color, size }) => (
+              <Image
+                style={{
+                  width: 24,
+                  height: 24,
+                  marginLeft: 2,
+                  position: "relative",
+                  left: 5,
+                  tintColor: focused ? color : "black",
+                }}
+                source={icons.statistics}
               />
             ),
           }}

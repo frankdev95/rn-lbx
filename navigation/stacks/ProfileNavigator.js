@@ -1,10 +1,10 @@
 import React from "react";
 import { Stack } from "../Navigators";
+import screenOptions from "../config/ScreenOptions";
 import DashboardScreen from "../../screens/profile/DashboardScreen";
 import CollectionScreen from "../../screens/portfolio/CollectionScreen";
 import WishlistScreen from "../../screens/profile/WishlistScreen";
 import BottleDetailsScreen from "../../screens/bottles/BottleDetailsScreen";
-import screenOptions from "../config/ScreenOptions";
 
 export default () => {
   return (
